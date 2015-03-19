@@ -1,4 +1,24 @@
+<div class="container">
+<div class="row clearfix splash" style="background-image:url(<%= asset_path 'b_w_scuba.jpeg'%>); width: 100%; background-repeat: none; background-size: cover;">
+
+<div class="column full banner">
 <h1>Welcome to Scuba Central!</h1>
-<h2>The site for all your Scuba needs!</h2>
-<p>Find me in app/views/welcome/index.html.erb</p>
-<%= link_to 'My Blog', controller: 'articles' %>
+<p>The site for all your Scuba needs!</br>
+   Review equipment! Post photos! Make a blog!</br>
+   Check the tides! Check the surf! Plan your trip!
+</p>
+<div class="buttons">
+
+<%= link_to 'Sign In', new_session_path, class: 'button_secondary' %>
+
+ <%= link_to 'Sign Up', new_user_path, class: 'button' %>
+
+ </div>
+ </div>
+ </div>
+
+ <div class="column full">
+		<p class="copyright">Made with &hearts; by Katie Kelleher</p>
+	</div>
+
+
