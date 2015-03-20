@@ -42,6 +42,8 @@ body {
   background-color: #0CCDE8;
 }
 
+.column.third { width: 33.3%; }
+
 /* --- Navigation ---*/
 
 .sidenav_container {
