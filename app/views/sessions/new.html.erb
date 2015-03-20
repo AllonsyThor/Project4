@@ -1,4 +1,10 @@
-<h1>Log in</h1>
+<div class="container black_back">
+  <div class="row clearfix">
+  <div class="column full login">
+
+<h1>Log In to Scuba Central</h1>
+
+<div class='session'>
 
 <%= form_tag sessions_path do %>
   <p>
@@ -9,5 +15,6 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
+  <p class="button user_submit"><%= submit_tag "Log in" %></p>
 <% end %>
+</div>
