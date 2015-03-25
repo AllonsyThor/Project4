@@ -1,24 +1,25 @@
-<div class="container">
-<div class="row clearfix splash" style="background-image:url(<%= asset_path 'b_w_scuba.jpeg'%>); width: 100%; background-repeat: none; height: 80%;">
 
-<div class="column full banner">
-<h1>Welcome to Scuba Central!</h1>
-<p>The site for all your Scuba needs!</br>
-   Review equipment! Post photos! Make a blog!</br>
-   Check the tides! Check the surf! Plan your trip!
-</p>
-<div class="buttons">
+<body>
+<div class='col-md-10 col-md-offset-1 text-center'>
+ <h1>Welcome to Scuba Central!</h1>
 
-<%= link_to 'Sign In', new_session_path, class: 'button_secondary' %>
+  </div>
+  <div class='container'>
+ 
+    <div class='col-md-6 col-md-offset-3 text-center'>
+    <h2>The site for all your Scuba needs!</h2>
+       <p class="lead">Review equipment! Post photos! Make a blog!</br>
+       Check the tides! Check the surf! Plan your trip!
+       </p>
+       <button type='button'><%= link_to 'Sign In', new_session_path %></button>
+       <button type='button' class='btn btn-danger'><%= link_to 'Sign Up', new_user_path %></button>
+    </div>
+  </div>
 
- <%= link_to 'Sign Up', new_user_path, class: 'button' %>
 
- </div>
- </div>
- </div>
 
- <div class="column full">
-		<p class="copyright">Made with &hearts; by Katie Kelleher</p>
-	</div>
+</body>
+
+ 
 
 
