@@ -3,7 +3,27 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@import "sessions.scss";
 
 body{
 font-family: 'Lobster', cursive;
+color: #2628E5;
+background-image: url("http://wallpaperswa.com/download/view?resolution=2560x1600&file=MTY4MHgxMDUwLzIwMTIwNjAyL3dvbWVuIHdhdGVyIGJsdWUgY2xvdWRzIGJpcmRzIG9yaWdpbmFsIGZpc2ggYmx1ZSBoYWlyIGJ1YmJsZXMgc2hvcnQgaGFpciBzd2ltbWluZyBzY3ViYSBkaXZpbmcgc2t5c2Nfd2FsbHBhcGVyc3dhLmNvbV8xMS5qcGc=&name=d29tZW5fd2F0ZXJfYmx1ZV9jbG91ZHNfYmlyZHNfb3JpZ2luYWxfZmlzaF9ibHVlX2hhaXJfYnViYmxlc19zaG9ydF9oYWlyX3N3aW1taW5nX3NjdWJhX2RpdmluZ19za3lzYw==");
+background-repeat: no-repeat;
+background-size: cover;
 }
+
+
+h1{
+	color: #0B0B40;
+}
+
+h2{
+	color: #15167F;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 300px;
+}
+
