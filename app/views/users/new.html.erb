@@ -1,8 +1,8 @@
 
 
-
+<div class='col-md-10 col-md-offset-1 text-center'>
 <h1>Sign Up for Scuba Central</h1>
-
+</div>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
    
@@ -15,20 +15,24 @@
    
   <% end %>
   
-  <p>
+ <div class='col-md-8 col-md-offset-2 text-center'> 
+  <p class='lead'>
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </p>
  
-  <p>
+  <p class='lead'>
     <%= f.label :password %><br />
     <%= f.password_field :password %>
   </p>
   
-  <p>
+  <p class='lead'>
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
-  
-  <p><%= f.submit %></p>
+ 
+  <p><button type='button' class='btn btn-info btn-lg btn-warning'><%= link_to 'Create Account', new_user_path %></p></button>
 <% end %>
+
+</div>
+ 
