@@ -30,8 +30,10 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
- 
-  <p><button type='button' class='btn btn-info btn-lg btn-warning'><%= link_to 'Create Account', new_user_path %></p></button>
+  <p class="lead">
+  <%= f.file_field :avatar %>
+  </p>
+  <p><button type='button' class='btn btn-info btn-lg btn-warning'><%= f.submit 'Create Account' %></p></button>
 <% end %>
 
 </div>

@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-
+gem "paperclip", "~> 4.2"
 
 gem 'font-awesome-sass'
 # Use jquery as the JavaScript library
