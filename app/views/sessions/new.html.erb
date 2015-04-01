@@ -48,16 +48,16 @@
 </div>
 
 <div class='col-md-8 col-md-offset-2 text-center'> 
-<%= form_tag sessions_path do %>
+<%= form_for User.new, url:{controller: "sessions", action:"create"} do |f|%>
   <p class='lead'>
     <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
+    <%= f.text_field :email %>
   </p>
   <p class='lead'>
     <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
+    <%= f.password_field :password %>
   </p>
-  <p><button type='button' class='btn btn-info btn-lg btn-warning'><%= link_to 'Log In', new_user_path%></p></button>
+  <p><button type='button' class='btn btn-info btn-lg btn-warning'><%= f.submit 'Log In'%></p></button>
 <% end %>
 </div>
 
