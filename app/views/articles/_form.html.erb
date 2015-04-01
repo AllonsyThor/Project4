@@ -13,19 +13,19 @@
       </ul>
     </div>
   <% end %>
- <div class='col-md-10 col-offset-1 text-center'
-  <p>
+ <div class='col-md-10 col-offset-1 text-center'>
+  <p class='lead'>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
  
-  <p>
+  <p class='lead'>
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
-</div> 
+
   <p>
-    <%= f.submit %>
-  </p>
- 
+    <button type='button' class='btn btn-danger'><%= link_to 'Create Article', article_path %>
+  </p></button>
+ </div> 
 <% end %>
