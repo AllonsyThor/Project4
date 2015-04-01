@@ -1,4 +1,6 @@
+<div class='col-md-10 md-offset-1 text-center'>
 <h1>New Review!</h1>
+</div>
 <%= form_for :article, url: articles_path do |f| %>
 <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -16,4 +18,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', articles_path %>
+<button type='button' class='btn btn-warning'><%= link_to 'Back', articles_path %></button>

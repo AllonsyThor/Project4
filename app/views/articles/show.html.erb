@@ -1,9 +1,10 @@
-<p>
+<div class='col-md-10 md-offset-1 text-center'>
+<p class='lead'>
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
  
-<p>
+<p class='lead'>
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
@@ -13,6 +14,6 @@
  
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
- 
-<%= link_to 'Edit Article', edit_article_path(@article) %> |
-<%= link_to 'Back to Articles', articles_path %>
+</div> 
+<button type='btn' class='btn btn-warning'><%= link_to 'Edit Article', edit_article_path(@article) %> </button>
+<button type='btn' class='btn btn-default'><%= link_to 'Back to Articles', articles_path %></button>
