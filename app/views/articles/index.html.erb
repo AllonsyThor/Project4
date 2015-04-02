@@ -11,12 +11,12 @@
  
   <% @articles.each do |article| %>
     <tr>
-    <div class='row well'>
+    <!-- <div class='row well'> -->
     <p class='lead'>
       <td><div class='col-md-6'><%= article.title %></td></div>
       <td><div class='col-md-6'><%= article.text %></td></div>
       </p>
-  </div>
+  <!-- </div> -->
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%=link_to 'Destroy', article_path(article),

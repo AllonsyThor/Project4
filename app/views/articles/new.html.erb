@@ -1,4 +1,4 @@
-<div class='col-md-10 md-offset-1 text-center'>
+<div class='col-md-10 col-offset-1 text-center'>
 <h1>New Review!</h1>
 </div>
 <%= form_for :article, url: articles_path do |f| %>
@@ -17,7 +17,7 @@
   <% end %>
 
 <%= render 'form' %>
-<div class='col-md-10 md-offset-1 text-center'>
+<div class='col-md-10 col-offset-1 text-center'>
 <button type='button' class='btn btn-warning'><%= link_to 'Back', articles_path %></button>
 </div>
 <% end %>

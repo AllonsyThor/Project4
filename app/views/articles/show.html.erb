@@ -1,4 +1,6 @@
-<div class='col-md-10 md-offset-1 text-center'>
+
+<div class='row well well-lg'>
+<div class='col-md-6 col-offset-4 text-center'>
 <p class='lead'>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -8,12 +10,15 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
- 
+</div>
+</div> 
+<div class='col-md-10 md-offset-1 text-center'>
 <h2>Comments</h2>
 <%= render @article.comments %>
  
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
-</div> 
+
 <button type='btn' class='btn btn-warning'><%= link_to 'Edit Article', edit_article_path(@article) %> </button>
 <button type='btn' class='btn btn-default'><%= link_to 'Back to Articles', articles_path %></button>
+</div> 
